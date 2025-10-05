@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini App: Fullscreen অ্যাড লোড করুন</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+            /* ডার্ক থিম স্টাইল */
+            background-color: #1c1c1c; 
+            color: #ffffff;
+        }
+        button {
+            padding: 15px 30px; 
+            margin: 20px 10px; 
+            font-size: 20px; 
+            cursor: pointer;
+            background-color: #f0c30f; /* উজ্জ্বল হলুদ রং */
+            color: #1c1c1c; 
+            border: none; 
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e0b300;
+        }
+    </style>
+    
+    <script async src="https://partner.adextra.io/jt/baa8f557c334370eebb83a8dcb6121ba641c493e.js"></script>
+
+</head>
+<body>
+
+    <h1>বিজ্ঞাপন লোড করার জন্য ক্লিক করুন</h1>
+    <p>ফুলস্ক্রিন বিজ্ঞাপনটি পুরো স্ক্রিন জুড়ে প্রদর্শিত হবে।</p>
+
+    <button id="button1">বাটন ১: অ্যাড দেখান</button>
+    <button id="button2">বাটন ২: অ্যাড দেখান</button>
+
+    <script>
+        // জাভাস্ক্রিপ্ট: প্রতিটি বাটন ক্লিকে Fullscreen অ্যাডটি যেন আসে তার জন্য প্রস্তুতি।
+        
+        function handleAdClick() {
+            // Fullscreen বা Interstitial অ্যাডগুলো সাধারণত স্বয়ংক্রিয়ভাবে 
+            // ব্যবহারকারীর ইন্টার‍্যাকশন (যেমন বাটন ক্লিক) সনাক্ত করে নিজেকে দেখানোর চেষ্টা করে।
+            
+            // AdExtra-এর কোড যেহেতু আপনার স্ক্রিপ্টেই আছে, এটিই দেখাবে।
+            
+            // যদি আপনি নিশ্চিত হতে চান, একটি সতর্কবার্তা দিন (ঐচ্ছিক):
+            // alert("Fullscreen অ্যাড লোড হচ্ছে... (যদি অ্যাড সক্রিয় থাকে)");
+            
+            console.log("Button clicked. AdExtra Fullscreen ad is trying to display.");
+        }
+
+        // বাটন ১ ও ২ এ ক্লিক ইভেন্ট যোগ
+        document.getElementById('button1').addEventListener('click', handleAdClick);
+        document.getElementById('button2').addEventListener('click', handleAdClick);
+    </script>
+    
+    </body>
+</html>
